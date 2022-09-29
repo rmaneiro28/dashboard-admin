@@ -1,0 +1,56 @@
+@import "/src/styles/config/colors";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $Black;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  z-index: 22;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: $GrayDark;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.75rem;
+  width: 90vw;
+  margin: 0 auto;
+  .name {
+    h1 {
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  .menu {
+    ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      li {
+        padding: 0 20px;
+        a {
+          color: $White;
+          text-decoration: 1px solid rgb(223, 0, 0);
+        }
+      }
+    }
+  }
+  .icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 2.5rem;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+}
